@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter</title>
+    <meta name="author" content="Kyle Yuan" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="master">
+      <header>
+        <h1>Temperature Converter</h1>
+        <p>Select type of conversion.</p>
+      </header>
+      <main>
+        <div class="radioBtns-Container">
+          <div class="leftRow">
+            <label for="CtoF">
+              <input
+                type="radio"
+                name="category"
+                id="CtoF"
+                value="CelciusToFahreneit"
+                checked
+              />
+              Celcius (°C) to Fahrenheit (°F)
+            </label>
+
+            <label for="FtoC">
+              <input
+                type="radio"
+                name="category"
+                id="FtoC"
+                value="FahrenheitToCelcius"
+              />
+              Fahrenheit (°F) to Celcius (°C)
+            </label>
+
+            <label for="CtoK">
+              <input
+                type="radio"
+                name="category"
+                id="CtoK"
+                value="CelciusToKelvin"
+              />
+              Celcius (°C) to Kelvin (K)
+            </label>
+          </div>
+          <div class="rightRow">
+            <label for="KtoC">
+              <input
+                type="radio"
+                name="category"
+                id="KtoC"
+                value="KelvinToCelcius"
+              />
+              Kelvin (K) to Celcius (°C)
+            </label>
+
+            <label for="FtoK">
+              <input
+                type="radio"
+                name="category"
+                id="FtoK"
+                value="FahrenheitToKelvin"
+              />
+              Fahrenheit (°F) to Kelvin (K)
+            </label>
+
+            <label for="KtoF">
+              <input
+                type="radio"
+                name="category"
+                id="KtoF"
+                value="KelvinToFahrenheit"
+              />
+              Kelvin (K) to Fahrenheit (°F)
+            </label>
+          </div>
+        </div>
+        <div class="lower-Container">
+          <div class="dual-Inputs-Container">
+            <input type="text" name="userInput" id="userInput" autofocus />
+            <p>→</p>
+            <input
+              type="text"
+              name="result"
+              id="result"
+              placeholder="K °F °C"
+              readonly
+              disabled
+            />
+          </div>
+          <button id="convertBtn">Convert</button>
+        </div>
+      </main>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
+} */
+
+.master {
+  min-width: 280px;
+  max-width: 600px;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 10px 5px rgb(0, 0, 0, 0.75);
+  padding: 15px;
+  margin-top: 20px;
+}
+
+header > h1,
+header > p {
+  text-align: center;
+}
+
+header > p {
+  margin-top: 15px;
+}
+
+.radioBtns-Container {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  margin: auto;
+  column-gap: 20px;
+  margin-block: 10px;
+}
+
+.leftRow,
+.rightRow {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.lower-Container {
+  /* border: 2px solid blue; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  margin: auto;
+}
+
+.dual-Inputs-Container {
+  /* border: 2px solid green; */
+  display: flex;
+  padding-inline: 5px;
+  /* column-gap: 10px; */
+}
+
+.dual-Inputs-Container > input {
+  width: 100%;
+}
+
+.dual-Inputs-Container > input,
+.dual-Inputs-Container > p {
+  padding-block: 10px;
+  text-align: center;
+}
+
+#userInput::placeholder {
+  color: red;
+}
+
+#convertBtn {
+  padding-block: 10px;
+  width: 35%;
+  font-size: 1.15rem;
+}
+
+#result {
+  text-align: center;
+  background-color: rgb(227, 227, 227);
+  border: none;
+}
+
+@media only screen and (max-width: 380px) {
+  .radioBtns-Container {
+    display: block;
+  }
+}
